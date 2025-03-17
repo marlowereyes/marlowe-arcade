@@ -5,14 +5,12 @@
             #051152,
             var(--background));
     display: flex;
-    align-items: flex-end;
 }
 
 .container {
     margin: var(--margin-large);
-    margin-bottom: 5rem;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
 }

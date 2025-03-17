@@ -1,0 +1,26 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.image {
+    max-width: 70%;
+    height: auto;
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+    .title {
+        gap: 3rem;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 667px) and (max-width: 1024px)  {
+    .title {
+        gap: 2rem;
+    }
+}
