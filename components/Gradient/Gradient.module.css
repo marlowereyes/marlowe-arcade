@@ -1,0 +1,18 @@
+.gradientBackground {
+    height: 100vh;
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%),
+            var(--blue),
+            #051152,
+            var(--background));
+    display: flex;
+    align-items: flex-end;
+}
+
+.container {
+    margin: var(--margin-large);
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
