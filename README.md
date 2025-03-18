@@ -1,8 +1,8 @@
 # To Dos
 
 1. Profile
-- Responsiveness
-- Logic
+- Responsiveness✅
+- Logic✅
 
 2. Crossword
 - Introduction (front-end)

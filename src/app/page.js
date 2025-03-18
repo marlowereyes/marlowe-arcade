@@ -6,7 +6,6 @@ import Button from "../../components/Button";
 export default function Home() {
   return (
     <>
-      <main>
         <Gradient
           content={
             <>
@@ -24,7 +23,6 @@ export default function Home() {
             </>
           }
         />
-      </main>
     </>
   );
 }
