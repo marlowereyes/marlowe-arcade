@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/logo.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body
         className={`${pixelfySans.variable} ${schibstedGrotesk.variable} antialiased`}
