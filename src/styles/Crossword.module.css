@@ -1,37 +1,34 @@
-.hello {
+.crosswordContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.helloSpan {
-    color: var(--pink);
-}
-
-.characterOnboarding {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.characterOnboarding div {
-    background-color: var(--pink);
-    padding: 0.5rem 2.3rem;
-    border-radius: 15px;
-    animation: MoveUpDown 1s linear infinite;
-}
+    gap: 20px;
+    padding: 20px;
+  }
   
-@keyframes MoveUpDown {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(10px);
-    }
-}
-
-.characterOnboarding div:hover {
-    animation: none;
-    color: rgb(232, 94, 193);
-}
+  .questionBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .inputContainer {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .inputContainer input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    border: 1px solid var(--foreground);
+    background-color: var(--white);
+    transition: background-color 0.3s ease;
+  }
+  
+  .correct {
+    background-color: var(--blue);
+    color: var(--pink);
+  }
+  
