@@ -23,7 +23,6 @@ export default function Profile() {
       localStorage.setItem("playerImage", selectedImage);
       
       router.push("/intro");
-      router.push("/crossword");
     } else {
       alert("Please enter your name and choose an image.");
     }

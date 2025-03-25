@@ -65,8 +65,9 @@ export default function Crossword() {
 
   return (
     <>
-      <BackLink href="/" pag="HOME" className={styles.backLink} />
-      <main className={styles.crosswordContainer}>
+      <BackLink href="/intro" pag="HOME" className={styles.backLink} />
+      <main className={styles.container}>
+      <div className={styles.crosswordContainer}>
         {crosswordData.map(({ question, answer }, wordIndex) => (
           <div key={wordIndex} className={styles.questionBlock}>
             <p>{question}</p>
@@ -90,14 +91,13 @@ export default function Crossword() {
             </div>
           </div>
         ))}
-        
-        {name && (
-          <h1>
-            Hello, <span className={styles.helloSpan}>{name}</span>
-          </h1>
-        )}
-        
+        </div>
         <div className={styles.characterOnboarding}>
+        {name && (
+          <h2>
+            Let's win this {name}!
+          </h2>
+        )}
           {imageName && (
             <Image
               src={`/images/${imageName}.png`}
