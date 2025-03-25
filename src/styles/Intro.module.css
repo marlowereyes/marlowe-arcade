@@ -1,0 +1,147 @@
+.hello {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.helloSpan {
+    color: var(--pink);
+}
+
+.characterOnboarding {
+    display: flex;
+    align-items: center;
+}
+
+.characterOnboarding h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.characterOnboarding button {
+    background-color: var(--pink);
+    padding: 0.5rem 2.3rem;
+    border-radius: 15px;
+    animation: MoveUpDown 1s linear infinite;
+}
+  
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+.characterOnboarding button:hover {
+    animation: none;
+    color: rgb(232, 94, 193);
+}
+
+.floor {
+    width: 100vw;
+    background-color: var(--blue);
+    height: 100vh;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background-color: var(--pink);
+    padding: 3rem;
+    width: 50vw;
+    max-width: 90%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .playButton:hover {
+    background-color: var(--dark-blue);
+  }
+
+.arrow {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .leftArrow {
+    float: left;
+  }
+  
+  .rightArrow {
+    float: right;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .progressCircles {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--foreground);
+  }
+  
+  .activeCircle {
+    background-color: var(--blue);
+  }
+
+  .disabledArrow {
+    opacity: 0;
+    cursor: auto;
+  }
+  
+  .button {
+    margin-top: 2rem;
+    background-color: var(--blue);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50%;
+    border: solid 2px;
+}
+
+.button:hover {
+    background-color: var(--pink);
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+    .button {
+        padding: 1rem 2rem;
+        border: solid 3px;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 667px) and (max-width: 1024px)  {
+    .button {
+        padding: 1rem 2rem;
+        border: solid 3px;
+    }
+}
