@@ -12,11 +12,11 @@
 .characterOnboarding {
     display: flex;
     align-items: center;
-    gap: 2rem;
 }
 
-.characterOnboarding h1 {
+.characterOnboarding h2 {
     text-align: center;
+    margin-bottom: 5rem;
 }
 
 .characterOnboarding button {

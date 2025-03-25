@@ -95,7 +95,7 @@ export default function Crossword() {
         <div className={styles.characterOnboarding}>
         {name && (
           <h2>
-            Let's win this {name}!
+            Go {name}!
           </h2>
         )}
           {imageName && (
